@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 async function getItems() {
     try {
-        const res = await fetch('http://localhost:3001/get/items', { cache: 'no-store' });
+        const res = await fetch('https://shop-hub-server-eight.vercel.app/get/items', { cache: 'no-store' });
         if (!res.ok) {
             throw new Error('Failed to fetch data');
         }

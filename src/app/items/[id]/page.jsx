@@ -3,7 +3,7 @@ import { ArrowLeft, ShoppingCart, Check } from 'lucide-react';
 
 async function getItem(id) {
     try {
-        const res = await fetch(`http://localhost:3001/get/items/${id}`, { cache: 'no-store' });
+        const res = await fetch(`https://shop-hub-server-eight.vercel.app/get/items/${id}`, { cache: 'no-store' });
         if (!res.ok) return null;
         return res.json();
     } catch (error) {

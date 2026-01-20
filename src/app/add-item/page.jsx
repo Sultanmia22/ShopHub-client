@@ -42,7 +42,7 @@ export default function AddItemPage() {
         setToast(null);
 
         try {
-            const res = await fetch('http://localhost:3001/post/items', {
+            const res = await fetch('https://shop-hub-server-eight.vercel.app/post/items', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
